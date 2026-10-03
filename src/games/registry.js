@@ -1,7 +1,62 @@
 import { lazy } from 'react';
+import './party.css';
 
 // Add a new game: create the component, then add one entry here.
 export const GAMES = [
+  {
+    id: 'bomb',
+    title: 'Hot potato bomb',
+    emoji: '💣',
+    blurb: 'Name something in the category, pass the bomb. Secret fuse. Whoever’s holding it does a forfeit.',
+    tag: 'Chaos',
+    isNew: true,
+    Component: lazy(() => import('./Bomb.jsx')),
+  },
+  {
+    id: 'duel',
+    title: 'Quickdraw duel',
+    emoji: '🤠',
+    blurb: 'Wait for it… DRAW! Fastest reaction wins. Shoot early and you lose the round.',
+    tag: 'Reflex',
+    isNew: true,
+    Component: lazy(() => import('./Duel.jsx')),
+  },
+  {
+    id: 'booth',
+    title: 'Photo booth',
+    emoji: '📸',
+    blurb: 'Silly prompts, a 3-2-1 countdown, both cameras snap at once. Download your strip together.',
+    tag: 'Keepsake',
+    isNew: true,
+    Component: lazy(() => import('./PhotoBooth.jsx')),
+  },
+  {
+    id: 'meld',
+    title: 'Mind meld',
+    emoji: '🧠',
+    blurb: 'Type a word at the same time. Different? Find the word that links them. Repeat until you match.',
+    tag: 'Telepathy',
+    isNew: true,
+    Component: lazy(() => import('./MindMeld.jsx')),
+  },
+  {
+    id: 'wave',
+    title: 'Same wavelength',
+    emoji: '📡',
+    blurb: 'One sees a secret spot on a dial and gives a clue. The other moves the needle to find it.',
+    tag: 'Co-op',
+    isNew: true,
+    Component: lazy(() => import('./Wavelength.jsx')),
+  },
+  {
+    id: 'clock',
+    title: 'Inner clock',
+    emoji: '⏱️',
+    blurb: 'Count seconds in your head with no timer. Closest wins, and stopping together means you’re in sync.',
+    tag: 'Quick',
+    isNew: true,
+    Component: lazy(() => import('./InnerClock.jsx')),
+  },
   {
     id: 'puzzle',
     title: 'Photo puzzle',

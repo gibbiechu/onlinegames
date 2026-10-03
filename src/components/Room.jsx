@@ -96,6 +96,7 @@ export default function Room() {
             <div className="stamp-grid">
               {GAMES.map((g) => (
                 <button key={g.id} className="game-stamp" onClick={() => chooseActivity(g.id)}>
+                  {g.isNew && <span className="new-sticker">New</span>}
                   <span className="game-emoji" aria-hidden="true">
                     {g.emoji}
                   </span>

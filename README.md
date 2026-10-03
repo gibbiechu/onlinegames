@@ -4,6 +4,12 @@ Video call someone far away, then play games together in the same room.
 Built with Vite + React + PeerJS (WebRTC). No backend, no database, no API keys.
 
 ## Games
+- 💣 **Hot potato bomb** – say something in the category, pass the bomb, secret fuse, forfeits
+- 🤠 **Quickdraw duel** – wait for DRAW, fastest reaction wins (lag-proof timing)
+- 📸 **Photo booth** – both cameras snap together on silly prompts, download a photo strip
+- 🧠 **Mind meld** – type words at the same time until your brains match
+- 📡 **Same wavelength** – one gives a clue, the other finds the secret spot on a dial
+- ⏱️ **Inner clock** – count seconds in your head, closest wins
 - 🧩 **Photo puzzle** – upload a photo, pick 9–100 pieces, solve together or race
 - 🍿 **Movie night** – one person shares a tab, the other watches with the call floating on top
 - 🏎️ **Sweetheart Speedway** – 4 tracks, 4 cars, 12 drivers, live multiplayer racing
@@ -40,6 +46,7 @@ Key files:
 | `src/room/RoomContext.jsx` | Calls, screen share, messaging (`send(type, data)` / `useRoomEvent(type, fn)`) |
 | `src/components/CallWidget.jsx` | Draggable / resizable / hideable call window |
 | `src/games/registry.js` | List of games on the menu |
+| `src/data/party.js` | Bomb categories, forfeits, photo booth prompts, wavelength spectrums |
 | `src/data/decks.js` | All truth/dare cards, Would-you-rather questions, drawing words — edit freely |
 | `src/games/racing/tracks.js` | Track shapes — add your own |
 
